@@ -638,6 +638,10 @@ svg{
         overflow: hidden;
     }
 
+    .fsect{
+        padding: 90px;
+    }
+
     .header-body{
         height: 80px;
     }
@@ -708,10 +712,18 @@ svg{
     }
 
     input ~ .nav > ul > li > a {
+        opacity: 0;
         -moz-transition: all .3s ease-in;
         -o-transition: all .3s ease-in;
         -webkit-transition: all .3s ease-in;
-        transition: all .3s ease-in;
+        transition: -moz-transition,-o-transition,-webkit-transition .3s ease-in;
+        transition: opacity 1ms;
+    }
+
+    input:checked ~ .nav > ul > li > a{
+        opacity: 1;
+        transition: opacity .75s;
+        transition-delay: 2s;
     }
 
     input:checked ~ .nav{
@@ -743,13 +755,13 @@ svg{
     }
 
     .social{
-        width: auto;
+        width: 100%;
+        display:flex;
+        justify-content: center;
     }
 
     .social li{
         display: inline-flex;
-        justify-content: center;
-        align-items: center;
         margin: 0px 0px 5px 35px;
     }
 
@@ -762,7 +774,7 @@ svg{
     }
 
     svg{
-        height: 50vh;
+        height: 40vh;
     }
 }
 
@@ -771,8 +783,6 @@ svg{
         font-size: 30px;
         line-height: 30px;
     }
-
-
 
     .header-body{
         height: 50px;
