@@ -639,7 +639,7 @@ svg{
     }
 
     .fsect{
-        padding: 90px;
+        padding-top: 90px;
     }
 
     .header-body{
@@ -782,6 +782,19 @@ svg{
     .content h1{
         font-size: 30px;
         line-height: 30px;
+    }
+
+    .logo{
+        height: 42px;
+        width: 107px;
+    }
+
+    .fsect{
+        padding-top: 79px;
+    }
+
+    section{
+        padding-top: 70px;
     }
 
     .header-body{
